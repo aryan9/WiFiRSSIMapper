@@ -218,7 +218,7 @@ public class MainActivity extends AppCompatActivity {
     private class UpdateGUITask2 extends AsyncTask<String, Integer, String> {
         protected String doInBackground(String... params) {
 
-            //Log.d(TAG,"THIS IS IT");
+            Log.d(TAG,"THIS IS IT");
             return params[0];
         }
 
