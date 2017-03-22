@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\a0132535\.android\build-cache\f3a22b5dffaa52ae61af4b06198772ccff8d5489\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
+        <dex dex="D:\Office\Android Projects\WiFiRSSIMapper2\app\build\intermediates\pre-dexed\debug\classes_c056bc000819c7e706e4637bbe1a9a035b3ee2c9.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\a0132535\.android\build-cache\f3a22b5dffaa52ae61af4b06198772ccff8d5489\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
+        <dex dex="D:\Office\Android Projects\WiFiRSSIMapper2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c056bc000819c7e706e4637bbe1a9a035b3ee2c9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\a0132535\.android\build-cache\c3c30b49e8678ea28ba6d54bffc6f71037d6113e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ea6a989b83d19b1b461281e0475a6cd6514897f8">
+        <dex dex="D:\Office\Android Projects\WiFiRSSIMapper2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_048964db57dcbcb910e0cd4324e40a62820651e2\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\a0132535\.android\build-cache\dcdb9d23011e157b29fbcf3462eeab779207e5a7\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="D:\Office\Android Projects\WiFiRSSIMapper2\app\build\intermediates\pre-dexed\debug\classes_7bdfd96306c1afafd14e82456e173c6d8c7b8926.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\a0132535\.android\build-cache\feb6bd1e7779116620893a91fb632aeba9ce1e27\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="D:\Office\Android Projects\WiFiRSSIMapper2\app\build\intermediates\pre-dexed\debug\classes_344e392d44478a1a4eef56b87b273e4c2f5c15c1.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\a0132535\.android\build-cache\2b09f3d0141d9a0bd7407018bea29c381ba7d336\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="D:\Office\Android Projects\WiFiRSSIMapper2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_26dcc79280e962a68d2dbf3b903e7452b6f92778\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\a0132535\.android\build-cache\feb6bd1e7779116620893a91fb632aeba9ce1e27\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="D:\Office\Android Projects\WiFiRSSIMapper2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_344e392d44478a1a4eef56b87b273e4c2f5c15c1\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\a0132535\.android\build-cache\2b09f3d0141d9a0bd7407018bea29c381ba7d336\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="D:\Office\Android Projects\WiFiRSSIMapper2\app\build\intermediates\pre-dexed\debug\classes_26dcc79280e962a68d2dbf3b903e7452b6f92778.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\a0132535\.android\build-cache\e317c88092735e02154df6709684e0dd2913da6e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e51c2f662bb72419632af5192553c37e33890a99">
+        <dex dex="D:\Office\Android Projects\WiFiRSSIMapper2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b6f9e2ea14980eb6819a61ff547ef68dd8ea2254\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.2.0\support-annotations-25.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="D:\Office\Android Projects\WiFiRSSIMapper2\app\build\intermediates\pre-dexed\debug\support-annotations-25.2.0_30f64a62097eb8c494ea5c502ef2f487c2fe4581.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\a0132535\.android\build-cache\fb3772b4f9e7e0393ae4b6ac4b60a401131740fd\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="152de8da301561dcb0946471697a420d8f7a68c5">
+        <dex dex="D:\Office\Android Projects\WiFiRSSIMapper2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0bd3f2e07917f8b50a12036992135da5fece82a3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.2.0\support-annotations-25.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="D:\Office\Android Projects\WiFiRSSIMapper2\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.2.0_30f64a62097eb8c494ea5c502ef2f487c2fe4581\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\a0132535\.android\build-cache\e24fadf59c562614a6731936aab0468489fa33ab\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
+        <dex dex="D:\Office\Android Projects\WiFiRSSIMapper2\app\build\intermediates\pre-dexed\debug\classes_0f77f6ea0a5f4fcb6a9e94066f2f1f7554b4ca57.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\a0132535\.android\build-cache\c1805d9c14ac59ec8050df1068441447317e4332\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="D:\Office\Android Projects\WiFiRSSIMapper2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5620220547e0055f39614c907e3cae225f76d1f1\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\a0132535\.android\build-cache\3511bc5f8ec90c851cc606a3505e5956d16cb2ab\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\Office\Android Projects\WiFiRSSIMapper2\app\build\intermediates\pre-dexed\debug\classes_80d71b7a9af132beeb0d270a3407453719ce7366.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\a0132535\.android\build-cache\2719e7de4d1fc09246634905bf16aeadbf525977\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="810f41e5b7fd99f196ebeabe865ba2c54e7e76dc">
+        <dex dex="D:\Office\Android Projects\WiFiRSSIMapper2\app\build\intermediates\pre-dexed\debug\classes_cb999900765f4198694150d150a09456a8b92e5a.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\a0132535\.android\build-cache\3511bc5f8ec90c851cc606a3505e5956d16cb2ab\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\Office\Android Projects\WiFiRSSIMapper2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_80d71b7a9af132beeb0d270a3407453719ce7366\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\a0132535\.android\build-cache\e24fadf59c562614a6731936aab0468489fa33ab\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
+        <dex dex="D:\Office\Android Projects\WiFiRSSIMapper2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0f77f6ea0a5f4fcb6a9e94066f2f1f7554b4ca57\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\a0132535\.android\build-cache\2719e7de4d1fc09246634905bf16aeadbf525977\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="810f41e5b7fd99f196ebeabe865ba2c54e7e76dc">
+        <dex dex="D:\Office\Android Projects\WiFiRSSIMapper2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cb999900765f4198694150d150a09456a8b92e5a\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\a0132535\.android\build-cache\c1805d9c14ac59ec8050df1068441447317e4332\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="D:\Office\Android Projects\WiFiRSSIMapper2\app\build\intermediates\pre-dexed\debug\classes_5620220547e0055f39614c907e3cae225f76d1f1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\a0132535\.android\build-cache\03709776871803486b6f4d18cb89592ec7486ce0\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="D:\Office\Android Projects\WiFiRSSIMapper2\app\build\intermediates\pre-dexed\debug\classes_e84c896dd5e060fe99e0ead4087e703e48b5dac3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\a0132535\.android\build-cache\f552944699094ada4cbcc80bdd5355f959fcb9a3\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="D:\Office\Android Projects\WiFiRSSIMapper2\app\build\intermediates\pre-dexed\debug\classes_0183e4f416a777175a979daf56b182367c207280.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\a0132535\.android\build-cache\03709776871803486b6f4d18cb89592ec7486ce0\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="D:\Office\Android Projects\WiFiRSSIMapper2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e84c896dd5e060fe99e0ead4087e703e48b5dac3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\a0132535\.android\build-cache\2d9bbdd3eafda18da6bef559dd434e42cf5b4134\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b1f95b0d76b8941577ad0ce807bd9e12fd39bfd9">
+        <dex dex="D:\Office\Android Projects\WiFiRSSIMapper2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0fbeb200e569a6acee078e97a9214f9d178d1bd2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\a0132535\.android\build-cache\dcdb9d23011e157b29fbcf3462eeab779207e5a7\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="D:\Office\Android Projects\WiFiRSSIMapper2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7bdfd96306c1afafd14e82456e173c6d8c7b8926\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Office\Android Projects\WiFiRSSIMapper2\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bd2906f34889f62317137214e2aaa497adbfc8ef">
+        <dex dex="D:\Office\Android Projects\WiFiRSSIMapper2\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_557f5c58981a0f7e1aefd7469ab4c1037637428b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\a0132535\.android\build-cache\f552944699094ada4cbcc80bdd5355f959fcb9a3\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="D:\Office\Android Projects\WiFiRSSIMapper2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0183e4f416a777175a979daf56b182367c207280\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Office\Android Projects\WiFiRSSIMapper2\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="D:\Office\Android Projects\WiFiRSSIMapper2\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_1a88898a61d6adb5aa4af34ef557a9defaa8b615\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="D:\Office\Android Projects\WiFiRSSIMapper2\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.2_3c9f5880fec0a880f40ecbbebb3a60ccb1f35afa.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="D:\Office\Android Projects\WiFiRSSIMapper2\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.2_3c9f5880fec0a880f40ecbbebb3a60ccb1f35afa\classes.dex" />
+    </item>
+
+</items>
