@@ -11,42 +11,38 @@
         android:id="@+id/Box4"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_alignTop="@+id/Box3"
-        android:layout_marginStart="33dp"
-        android:layout_toEndOf="@+id/Box3"
         android:clickable="true"
-        android:src="@drawable/rectangle"></ImageView>
+        android:src="@drawable/rectangle"
+        android:layout_alignTop="@+id/Box3"
+        android:layout_toEndOf="@+id/Box3"></ImageView>
 
     <ImageView
         android:id="@+id/Box2"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="27dp"
-        android:layout_toEndOf="@+id/rectimage2"
+        android:layout_marginTop="28dp"
         android:clickable="true"
-        android:src="@drawable/rectangle"></ImageView>
+        android:src="@drawable/rectangle"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/Box3"></ImageView>
 
     <ImageView
         android:id="@+id/Box15"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_alignTop="@+id/Box14"
-        android:layout_marginStart="36dp"
-        android:layout_toEndOf="@+id/Box14"
         android:clickable="true"
-        android:src="@drawable/rectangle"></ImageView>
+        android:src="@drawable/rectangle"
+        android:layout_alignTop="@+id/Box14"
+        android:layout_toEndOf="@+id/Box14"></ImageView>
 
     <ImageView
         android:id="@+id/Box1"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/Box2"
-        android:layout_marginStart="24dp"
         android:clickable="true"
-        android:src="@drawable/rectangle"></ImageView>
+        android:src="@drawable/rectangle"
+        android:layout_above="@+id/Box6"
+        android:layout_toStartOf="@+id/Box6"></ImageView>
 
     <ImageView
         android:id="@+id/Box8"
@@ -61,20 +57,20 @@
         android:id="@+id/Box6"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_alignStart="@+id/Box2"
-        android:layout_below="@+id/Box2"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="16dp"
         android:clickable="true"
-        android:src="@drawable/rectangle"></ImageView>
+        android:src="@drawable/rectangle"
+        android:layout_below="@+id/Box3"
+        android:layout_toStartOf="@+id/Box7"></ImageView>
 
     <ImageView
         android:id="@+id/Box11"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_alignStart="@+id/Box7"
-        android:layout_alignTop="@+id/Box10"
         android:clickable="true"
-        android:src="@drawable/rectangle"></ImageView>
+        android:src="@drawable/rectangle"
+        android:layout_alignTop="@+id/Box10"
+        android:layout_toEndOf="@+id/Box10"></ImageView>
 
     <ImageView
         android:id="@+id/Box13"
@@ -99,10 +95,10 @@
         android:id="@+id/Box10"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_alignStart="@+id/Box6"
-        android:layout_alignTop="@+id/Box9"
         android:clickable="true"
-        android:src="@drawable/rectangle"></ImageView>
+        android:src="@drawable/rectangle"
+        android:layout_alignTop="@+id/Box9"
+        android:layout_centerHorizontal="true"></ImageView>
 
     <ImageView
         android:id="@+id/Box7"
@@ -136,10 +132,10 @@
         android:id="@+id/Box14"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_alignStart="@+id/Box6"
-        android:layout_alignTop="@+id/Box13"
         android:clickable="true"
-        android:src="@drawable/rectangle"></ImageView>
+        android:src="@drawable/rectangle"
+        android:layout_alignTop="@+id/Box13"
+        android:layout_alignStart="@+id/Box10"></ImageView>
 
     <ImageView
         android:id="@+id/Box3"
