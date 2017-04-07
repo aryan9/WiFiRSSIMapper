@@ -57,11 +57,10 @@
         android:id="@+id/Box6"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginTop="16dp"
         android:clickable="true"
         android:src="@drawable/rectangle"
-        android:layout_below="@+id/Box3"
-        android:layout_toStartOf="@+id/Box7"></ImageView>
+        android:layout_below="@+id/Box2"
+        android:layout_alignStart="@+id/Box2"></ImageView>
 
     <ImageView
         android:id="@+id/Box11"
@@ -76,11 +75,10 @@
         android:id="@+id/Box13"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_alignStart="@+id/Box9"
-        android:layout_below="@+id/Box9"
-        android:layout_marginTop="15dp"
         android:clickable="true"
-        android:src="@drawable/rectangle"></ImageView>
+        android:src="@drawable/rectangle"
+        android:layout_below="@+id/Box10"
+        android:layout_toStartOf="@+id/Box14"></ImageView>
 
     <ImageView
         android:id="@+id/Box12"
@@ -113,11 +111,10 @@
         android:id="@+id/Box9"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_alignStart="@+id/rectimage2"
-        android:layout_below="@+id/rectimage2"
-        android:layout_marginTop="19dp"
         android:clickable="true"
-        android:src="@drawable/rectangle"></ImageView>
+        android:src="@drawable/rectangle"
+        android:layout_below="@+id/Box6"
+        android:layout_alignStart="@+id/rectimage2"></ImageView>
 
     <ImageView
         android:id="@+id/Box16"
@@ -150,9 +147,9 @@
         android:id="@+id/rectimage2"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_alignStart="@+id/Box1"
-        android:layout_alignTop="@+id/Box6"
         android:clickable="true"
-        android:src="@drawable/rectangle"></ImageView>
+        android:src="@drawable/rectangle"
+        android:layout_below="@+id/Box2"
+        android:layout_toStartOf="@+id/Box6"></ImageView>
 
 </RelativeLayout>

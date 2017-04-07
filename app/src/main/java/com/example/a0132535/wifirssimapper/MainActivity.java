@@ -194,16 +194,12 @@ public class MainActivity extends AppCompatActivity {
         final Button openMap = (Button) findViewById(R.id.openmap);
         openMap.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
-                new Thread(new Runnable() {
-                    public void run() {
-                            Intent mapIntent = new Intent(MainActivity.this, MapActivity.class);
-                            startActivity(mapIntent);
-                    }
-                });
+                Intent mapIntent = new Intent(MainActivity.this, MapActivity.class);
+                startActivity(mapIntent);
             }
         });
-
     }
+
 
     public void ReadingFinishedNotify() {
         //Define Notification Manager
