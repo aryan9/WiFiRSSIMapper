@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
             writeExternalStoragePermissionGranted = false;
     boolean wifiScanResultsReceived = true;
     RSSIDistanceDbHelper RssiDistanceDb;
+    CalculateDistanceFromRSSI DistanceClass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -196,6 +197,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent mapIntent = new Intent(MainActivity.this, MapActivity.class);
                 startActivity(mapIntent);
+                DistanceClass.printVal();
             }
         });
     }
