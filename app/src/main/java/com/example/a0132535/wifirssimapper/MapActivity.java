@@ -19,10 +19,10 @@ public class MapActivity extends AppCompatActivity {
         setContentView(R.layout.activity_map);
 
         ImageView IV, IV1;
-        IV = (ImageView)findViewById(R.id.Box7);
+        IV = (ImageView)findViewById(R.id.SQ2);
         IV.setBackgroundColor(Color.rgb(250, 0, 0));
 
-        IV1 = (ImageView)findViewById(R.id.imageView19);
+        IV1 = (ImageView)findViewById(R.id.SQ16);
         IV1.setBackgroundColor(Color.rgb(0, 250, 0));
     }
 }

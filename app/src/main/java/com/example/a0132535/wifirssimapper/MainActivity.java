@@ -41,12 +41,15 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.security.Permission;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 
+import static android.R.id.list;
+
 public class MainActivity extends AppCompatActivity {
 
-    TextView tvScanResults, tvCurrWiFiRSSI;
+    TextView tvScanResults, tvCurrWiFiRSSI, tvFinalPoint;
     private final int PERMISSIONS_REQUEST_CODE_ACCESS_COARSE_LOCATION = 27,
             PERMISSIONS_REQUEST_CODE_WRITE_EXTERNAL_STORAGE = 28;
     WifiManager mainWifi;
@@ -69,6 +72,8 @@ public class MainActivity extends AppCompatActivity {
         RssiDistanceDb = new RSSIDistanceDbHelper(getApplicationContext());
         tvScanResults = (TextView) findViewById(R.id.tvScanResults);
         tvCurrWiFiRSSI = (TextView) findViewById(R.id.tvCurrWiFiRSSI);
+        tvFinalPoint = (TextView) findViewById(R.id.tvFinalPoint);
+
 
         // Initiate wifi service manager
         mainWifi = (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
@@ -199,23 +204,23 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(mapIntent);
                 //DistanceClass.printVal();
 
-                RSSIinformation InfoObject = new RSSIinformation();
-
-                InfoObject.distanceA =  4.45;
-                InfoObject.distanceB = 2.85;
-                InfoObject.distanceC = 4.5;
-
-                InfoObject.pointA1 = 0;
-                InfoObject.pointA2 = 0;
-
-                InfoObject.pointB1 = 0;
-                InfoObject.pointB2 = 6.0;
-
-                InfoObject.pointC1 = 6.02;
-                InfoObject.pointC2 = 6.01;
-
-
-                DistanceClass.getMeetingPoints(InfoObject);
+//                RSSIinformation InfoObject = new RSSIinformation();
+//
+//                InfoObject.distanceA =  4.45;
+//                InfoObject.distanceB = 2.85;
+//                InfoObject.distanceC = 4.5;
+//
+//                InfoObject.pointA1 = 0;
+//                InfoObject.pointA2 = 0;
+//
+//                InfoObject.pointB1 = 0;
+//                InfoObject.pointB2 = 6.0;
+//
+//                InfoObject.pointC1 = 6.02;
+//                InfoObject.pointC2 = 6.01;
+//
+//
+//                DistanceClass.getMeetingPoints(InfoObject);
             }
         });
     }
@@ -364,22 +369,128 @@ public class MainActivity extends AppCompatActivity {
         // This method call when number of wifi connections changed
         public synchronized void onReceive(Context c, Intent intent) {
 
+            String[] APs = {"cc3200_1","cc3200_2","cc3200_3","cc3200_4"};
             sb = new StringBuilder();
             wifiList = mainWifi.getScanResults();
             sb.append("\n        Number Of Wifi connections :"+wifiList.size()+"\n\n");
+
+            //APClass APObj = new APClass();
+            ArrayList<APClass> APObject= new ArrayList<>();
+            APObject.add(new APClass());
+            APObject.add(new APClass());
+            APObject.add(new APClass());
+            APObject.add(new APClass());
+            int discardDistanceID = 0;
+
+            double currentMinDistance = 10000;
 
             for(int i = 0; i < wifiList.size(); i++){
 
 //                sb.append(new Integer(i+1).toString() + ". ");
 //                sb.append((wifiList.get(i)).toString());
 //                sb.append("\n\n");
-                if(wifiList.get(i).SSID.toString().equals("halekoa75"))
+                if(wifiList.get(i).SSID.toString().equals(APs[0]))
                 {
                     sb.append(wifiList.get(i).SSID.toString() + "\n");
                     sb.append(wifiList.get(i).level + "\n");
+
+                    APObject.get(0).distance = DistanceClass.getDistance(wifiList.get(i).level);
+                    APObject.get(0).x = 0.012;
+                    APObject.get(0).y = 0.012;
+                    sb.append("Distance: ");
+                    sb.append(new Double(APObject.get(0).distance).toString() + "\n");
                     sb.append("\n");
+
+                    if(currentMinDistance > APObject.get(0).distance)
+                    {
+                        currentMinDistance = APObject.get(0).distance;
+                        discardDistanceID = 0;
+                    }
                 }
+                if(wifiList.get(i).SSID.toString().equals(APs[1]))
+                {
+                    sb.append(wifiList.get(i).SSID.toString() + "\n");
+                    sb.append(wifiList.get(i).level + "\n");
+
+                    APObject.get(1).distance = DistanceClass.getDistance(wifiList.get(i).level);
+                    APObject.get(1).x = 145.012;
+                    APObject.get(1).y = 0.01;
+                    sb.append("Distance: ");
+                    sb.append(new Double(APObject.get(1).distance).toString() + "\n");
+                    sb.append("\n");
+
+                    if(currentMinDistance > APObject.get(1).distance)
+                    {
+                        currentMinDistance = APObject.get(1).distance;
+                        discardDistanceID = 1;
+                    }
+                }
+                if(wifiList.get(i).SSID.toString().equals(APs[2]))
+                {
+                    sb.append(wifiList.get(i).SSID.toString() + "\n");
+                    sb.append(wifiList.get(i).level + "\n");
+
+                    APObject.get(2).distance = DistanceClass.getDistance(wifiList.get(i).level);
+                    APObject.get(2).x = 145.001;
+                    APObject.get(2).y = 125.001;
+                    sb.append("Distance: ");
+                    sb.append(new Double(APObject.get(2).distance).toString() + "\n");
+                    sb.append("\n");
+
+                    if(currentMinDistance > APObject.get(2).distance)
+                    {
+                        currentMinDistance = APObject.get(2).distance;
+                        discardDistanceID = 2;
+                    }
+                }
+                if(wifiList.get(i).SSID.toString().equals(APs[3]))
+                {
+                    sb.append(wifiList.get(i).SSID.toString() + "\n");
+                    sb.append(wifiList.get(i).level + "\n");
+
+                    APObject.get(3).distance = DistanceClass.getDistance(wifiList.get(i).level);
+                    APObject.get(3).x = 0;
+                    APObject.get(3).y = 125.012;
+                    sb.append("Distance: ");
+                    sb.append(new Double(APObject.get(3).distance).toString() + "\n");
+                    sb.append("\n");
+
+                    if(currentMinDistance > APObject.get(3).distance)
+                    {
+                        currentMinDistance = APObject.get(3).distance;
+                        discardDistanceID = 3;
+                    }
+                }
+
             }
+                APObject.remove(discardDistanceID);
+
+            RSSIinformation InfoObject = new RSSIinformation();
+
+            InfoObject.distanceA =  APObject.get(0).distance;
+            InfoObject.distanceB = APObject.get(1).distance;
+            InfoObject.distanceC = APObject.get(2).distance;
+
+            InfoObject.pointA1 = APObject.get(0).x;
+            InfoObject.pointA2 = APObject.get(0).y;
+
+            InfoObject.pointB1 = APObject.get(1).x;
+            InfoObject.pointB2 = APObject.get(1).y;
+
+            InfoObject.pointC1 = APObject.get(2).x;
+            InfoObject.pointC2 = APObject.get(2).y;
+
+
+            final double[] value = DistanceClass.getMeetingPoints(InfoObject);
+            runOnUiThread(new Runnable() {
+
+                @Override
+                public void run() {
+                    //btn.setText("#" + i);
+                    tvFinalPoint.setText("x = " + Double.toString(value[0]) + " | y = " + Double.toString(value[1]));
+                }
+            });
+
             Log.d(TAG,sb.toString());
             tvScanResults.setText(sb);
             wifiScanResultsReceived = true;
