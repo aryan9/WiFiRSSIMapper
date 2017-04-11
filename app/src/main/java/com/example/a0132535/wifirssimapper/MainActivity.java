@@ -197,7 +197,25 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent mapIntent = new Intent(MainActivity.this, MapActivity.class);
                 startActivity(mapIntent);
-                DistanceClass.printVal();
+                //DistanceClass.printVal();
+
+                RSSIinformation InfoObject = new RSSIinformation();
+
+                InfoObject.distanceA =  4.45;
+                InfoObject.distanceB = 2.85;
+                InfoObject.distanceC = 4.5;
+
+                InfoObject.pointA1 = 0;
+                InfoObject.pointA2 = 0;
+
+                InfoObject.pointB1 = 0;
+                InfoObject.pointB2 = 6.0;
+
+                InfoObject.pointC1 = 6.02;
+                InfoObject.pointC2 = 6.01;
+
+
+                DistanceClass.getMeetingPoints(InfoObject);
             }
         });
     }
@@ -222,7 +240,7 @@ public class MainActivity extends AppCompatActivity {
 
     private synchronized void WriteDataToFile(String data, String waitTimeMillis) {
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N && checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
             requestPermissions(new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, PERMISSIONS_REQUEST_CODE_WRITE_EXTERNAL_STORAGE);
             Log.d("INFO", "This is the fuckup!");
             //After this point you wait for callback in onRequestPermissionsResult(int, String[], int[]) overriden method
@@ -352,9 +370,15 @@ public class MainActivity extends AppCompatActivity {
 
             for(int i = 0; i < wifiList.size(); i++){
 
-                sb.append(new Integer(i+1).toString() + ". ");
-                sb.append((wifiList.get(i)).toString());
-                sb.append("\n\n");
+//                sb.append(new Integer(i+1).toString() + ". ");
+//                sb.append((wifiList.get(i)).toString());
+//                sb.append("\n\n");
+                if(wifiList.get(i).SSID.toString().equals("halekoa75"))
+                {
+                    sb.append(wifiList.get(i).SSID.toString() + "\n");
+                    sb.append(wifiList.get(i).level + "\n");
+                    sb.append("\n");
+                }
             }
             Log.d(TAG,sb.toString());
             tvScanResults.setText(sb);
