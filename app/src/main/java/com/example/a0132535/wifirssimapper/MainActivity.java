@@ -63,6 +63,8 @@ public class MainActivity extends AppCompatActivity {
     RSSIDistanceDbHelper RssiDistanceDb;
     CalculateDistanceFromRSSI DistanceClass;
 
+    MapActivity mapActivity;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -202,6 +204,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent mapIntent = new Intent(MainActivity.this, MapActivity.class);
                 startActivity(mapIntent);
+                //mapActivity.PlotCoordinates(2.5,3.5);
                 //DistanceClass.printVal();
 
 //                RSSIinformation InfoObject = new RSSIinformation();
@@ -385,10 +388,6 @@ public class MainActivity extends AppCompatActivity {
             double currentMinDistance = 10000;
 
             for(int i = 0; i < wifiList.size(); i++){
-
-//                sb.append(new Integer(i+1).toString() + ". ");
-//                sb.append((wifiList.get(i)).toString());
-//                sb.append("\n\n");
                 if(wifiList.get(i).SSID.toString().equals(APs[0]))
                 {
                     sb.append(wifiList.get(i).SSID.toString() + "\n");
@@ -490,6 +489,7 @@ public class MainActivity extends AppCompatActivity {
                     tvFinalPoint.setText("x = " + Double.toString(value[0]) + " | y = " + Double.toString(value[1]));
                 }
             });
+
 
             Log.d(TAG,sb.toString());
             tvScanResults.setText(sb);
